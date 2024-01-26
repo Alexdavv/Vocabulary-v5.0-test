@@ -48,3 +48,16 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Sources, working and output files
+./source/*.csv
+./working/*.csv
+./output/*.csv
+
+# Downloaded binary models
+*.tar.gz
+*.bin
+
+# Platform-specific environments and configs
+.vscode/
+.venv/
+conda/
