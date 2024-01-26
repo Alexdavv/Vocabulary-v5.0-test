@@ -109,6 +109,7 @@ dependencies:
   - ncurses=6.4=h6a678d5_0
   - nest-asyncio=1.6.0=pyhd8ed1ab_0
   - nodeenv=1.8.0=pyhd8ed1ab_0
+  - notebook=7.0.7=pyhd8ed1ab_0
   - notebook-shim=0.2.3=pyhd8ed1ab_0
   - numpy=1.26.3=py39h474f0d3_0
   - openpyxl=3.1.2=py39hd1e30aa_1
