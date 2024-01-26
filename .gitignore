@@ -49,9 +49,9 @@ Thumbs.db
 *.wmv
 
 # Sources, working and output files
-./source/*.csv
-./working/*.csv
-./output/*.csv
+source/*.csv
+working/*.csv
+output/*.csv
 
 # Downloaded binary models
 *.tar.gz
