@@ -24,6 +24,12 @@ matches in the from source to target concepts mapping task.
     consistent development environment. Only `conda activate mapping_machine`
     needs to be ran on subsequent sessions.
 
+    If you are using a Linux or MacOS system, you need to create the
+    environment with `environment-compat.yaml` instead of `environment.yml`:
+    ```sh
+    conda env create -f environment-compat.yml
+    ```
+
 4. Place all input files in `source/`
 5. Place all downloaded binary models (e.g. BioWordVec) in `models/`. If you do
 not have them, Mapping Machine will download them.
@@ -40,6 +46,7 @@ work, but you need to make sure to select the correct ipykernel.
 * It is recommended to run `pre-commit` when first initializing this repository
 or to manually clean all cell outputs before commiting changes to the notebook.
 * If you are installing additional packages, [prefer](https://docs.anaconda.com/free/anaconda/packages/install-packages/)
-`conda install` to `pip install`. Make sure to run `conda env export` and to
-subsequently include `environment.yaml` in the commit to reflect changes to the
-environment.
+`conda install` to `pip install`. Make sure to run
+`conda env export > environment.yml` and to subsequently include
+`environment.yaml` in the commit to reflect changes to the environment. You
+should also manually add important target packages to `environment-compat.yml`.
