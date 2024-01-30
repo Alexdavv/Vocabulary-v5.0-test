@@ -1,0 +1,14 @@
+{
+    "paths": {
+        "source_path": "meddra_pt.csv",
+        "target_path": "SNOMED_OMOPext_CPT4_HCPCS.csv"
+    },
+    "execution": {
+        "batch_size": 1000,
+        "num_top_matches": 10
+    },
+    "models": {
+        "BioWordVec": "https://ftp.ncbi.nlm.nih.gov/pub/lu/Suppl/BioSentVec/BioWordVec_PubMed_MIMICIII_d200.vec.bin",
+        "Spacy_SciSM": "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_sm-0.5.1.tar.gz"
+    }
+}

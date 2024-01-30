@@ -54,6 +54,7 @@ working/*.csv
 output/*.csv
 
 # Downloaded binary models
+models/
 *.tar.gz
 *.bin
 
